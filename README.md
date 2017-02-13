@@ -29,7 +29,7 @@ docker run -d \
 
 ```
 docker run -d \
-           -e GIT_DNSDATA="https://github.com/andreasfaerber/docker-tinydns-exampledata.git" \
+           -e GIT_DNSDATA="https://username:password@your.git.url/repository.git" \
            -e GIT_UPDATE_FREQUENCY=60 \
            -p 53:53/udp \
            --name tinydns_example \
