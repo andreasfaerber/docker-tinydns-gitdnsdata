@@ -15,7 +15,7 @@ that uses statically compiled binaries for tinydns and tinydns-data based on Alp
 ```
 docker run -d \
   -e GIT_DNSDATA=\
-  "https://github.com/andreasfaerber/docker-tinydns-exampledata.git" \
+"https://github.com/andreasfaerber/docker-tinydns-exampledata.git" \
   -e GIT_UPDATE_FREQUENCY=300 \
   -p 53:53/udp \
   --name tinydns_example \
