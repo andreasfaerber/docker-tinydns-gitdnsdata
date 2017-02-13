@@ -11,6 +11,8 @@ RUN apk add --no-cache git make bind-tools && \
 
 COPY ./bin/tinydns /usr/local/bin/
 COPY ./bin/tinydns-data /usr/local/bin/
+COPY ./bin/tai64n /usr/local/bin/
+COPY ./bin/tai64nlocal /usr/local/bin/
 COPY ./bin/dnsdata_update.sh /
 COPY ./bin/run_tinydns.sh /
 

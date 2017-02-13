@@ -23,4 +23,4 @@ done
 
 sleep 2
 
-exec tinydns 2>&1
+tinydns 2>&1 | /usr/local/bin/tai64n | /usr/local/bin/tai64nlocal
