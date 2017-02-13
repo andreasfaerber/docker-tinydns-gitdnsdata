@@ -14,11 +14,11 @@ that uses statically compiled binaries for tinydns and tinydns-data based on Alp
 
 ```
 docker run -d \
-           -e GIT_DNSDATA="https://github.com/andreasfaerber/docker-tinydns-exampledata.git" \
-           -e GIT_UPDATE_FREQUENCY=300 \
-           -p 53:53/udp \
-           --name tinydns_example \
-           afaerber/docker-tinydns-gitdnsdata
+  -e GIT_DNSDATA="https://github.com/andreasfaerber/docker-tinydns-exampledata.git" \
+  -e GIT_UPDATE_FREQUENCY=300 \
+  -p 53:53/udp \
+  --name tinydns_example \
+  afaerber/docker-tinydns-gitdnsdata
 ```
 
 #### Run with ssh key authentication for some real world DNS data repository:
@@ -29,11 +29,11 @@ docker run -d \
 
 ```
 docker run -d \
-           -e GIT_DNSDATA="https://username:password@your.git.url/repository.git" \
-           -e GIT_UPDATE_FREQUENCY=300 \
-           -p 53:53/udp \
-           --name tinydns_example \
-           afaerber/docker-tinydns-gitdnsdata
+  -e GIT_DNSDATA="https://username:password@your.git.url/repository.git" \
+  -e GIT_UPDATE_FREQUENCY=300 \
+  -p 53:53/udp \
+  --name tinydns_example \
+  afaerber/docker-tinydns-gitdnsdata
 ```
 
 #### Test example install
