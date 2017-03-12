@@ -4,6 +4,10 @@ cat >> /root/.ssh/config <<EOF
 StrictHostKeyChecking no
 EOF
 
+if [ -r /root/.ssh/id_rsa ]; then
+    chmod 0600 /root/.ssh/id_rsa
+fi
+
 if [ ! -d /etc/tinydns/root/.git ]; then
     cd /
     rm -rf /etc/tinydns/root/* /etc/tinydns/root/.git
