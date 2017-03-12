@@ -1,6 +1,6 @@
 FROM alpine:3.5
 
-RUN apk add --no-cache git make bind-tools && \
+RUN apk add --no-cache git make bind-tools openssh && \
     mkdir /root/.ssh && \
     mkdir -p /etc/tinydns/env && \
     mkdir /etc/tinydns/root && \
